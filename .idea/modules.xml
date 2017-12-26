@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WeatherBot.iml" filepath="$PROJECT_DIR$/.idea/modules/WeatherBot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WeatherBot_main.iml" filepath="$PROJECT_DIR$/.idea/modules/WeatherBot_main.iml" group="WeatherBot" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/WeatherBot_test.iml" filepath="$PROJECT_DIR$/.idea/modules/WeatherBot_test.iml" group="WeatherBot" />
+    </modules>
+  </component>
+</project>
