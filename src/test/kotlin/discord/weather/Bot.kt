@@ -1,6 +1,5 @@
 package discord.weather
 
-import net.dv8tion.jda.core.*
 import net.dv8tion.jda.core.entities.Message
 import net.dv8tion.jda.core.entities.MessageChannel
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent

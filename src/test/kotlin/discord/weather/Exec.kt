@@ -1,5 +1,9 @@
 package discord.weather
 
+/**********************************
+ * Main class for running the bot *
+ **********************************/
+
 import net.dv8tion.jda.core.AccountType
 import net.dv8tion.jda.core.JDABuilder
 
