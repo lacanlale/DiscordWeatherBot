@@ -4,9 +4,16 @@ package discord.weather
  * Weather Class for holding data for a single weather report *
  **************************************************************/
 
-data class WeatherReport (val summary : String = "",
-                          val precipitation : String = "Precipitation Chance: ",
-                          val tempHigh : String = "High: ",
-                          val tempLow : String = "Low: ",
-                          val humidity : String = "Humidity: ",
-                          val windSpeed : String = "Wind Speed: ")
+class WeatherReport constructor (sum : String,
+                          prec : String,
+                          high : String = "High: ",
+                          low : String = "Low: ",
+                          hum : String = "Humidity: ",
+                          speed : String = "Wind Speed: "){
+    val summary = sum
+    val precipitation = "Precipitation Chance: $prec%"
+    val tempHigh = "High: $high F°"
+    val tempLow = "Low: $low F°"
+    val humidity = "Humidity: $hum %"
+    val windSpeed = "Wind Speed: $speed MPH"
+}

@@ -1,33 +1,36 @@
 package discord.weather
 
-import com.beust.klaxon.JSON
 import org.json.JSONObject
+import java.net.HttpURLConnection
+import java.net.URL
 
 /************************************************
  * Parser class for the JSON values returned    *
- * from darksky.net's output. Klaxon is used to *
- * parse the JSON values.                       *
+ * from darksky.net's output                    *
  ************************************************/
 
 class WeatherJSON constructor(keys:Secret = Secret(),
                               latitude:String,
                               longitude:String) {
-    private val darkskyWeatherURL: String = "https://api.darksky.net/forecast/"
-    private val darkskyWeatherAPI: String = keys.weather
-
-    private var darkskyFullURL:StringBuilder = StringBuilder(darkskyWeatherURL)
-            .append(darkskyWeatherAPI)
+    private var darkskyFullURL = StringBuilder("https://api.darksky.net/forecast/")
+            .append(keys.weather)
+            .append(latitude)
             .append(",")
-            .append(latitude).append(longitude)
+            .append(longitude)
 
-    val finalURL: String = darkskyFullURL.toString()
-    val urlReply: String? = openLink(finalURL)
+    private var connection = URL(darkskyFullURL.toString()).openConnection() as HttpURLConnection
+    private val connectionData = try {
+            connection.inputStream?.bufferedReader()?.readText()
+        } finally { connection.disconnect() }
 
-    //todo have jsonWeatherData parse the URL reply
-    val jsonWeatherData: JSONObject = JSONObject()
+    val jsonDayWeather: JSONObject = JSONObject(connectionData).getJSONObject("daily")
 
-    //todo Finish url opener
-    fun openLink(url: String): String?{
-        return null
-    }
+    //todo move weather report into bot class
+    val weatherDay: WeatherReport = WeatherReport(
+            jsonDayWeather.getString("summary"),
+            jsonDayWeather.getString("precipProbability"),
+            jsonDayWeather.getString("temperatureHigh"),
+            jsonDayWeather.getString("temperatureLow"),
+            jsonDayWeather.getString("humidity"),
+            jsonDayWeather.getString("windSpeed"))
 }
