@@ -7,4 +7,5 @@ package discord.weather
  ********************************************/
 
 data class Secret (val weather: String = "",
-                   val discordBot: String = "")
+                   val discordBot: String = "",
+                   val geocoding: String = "")

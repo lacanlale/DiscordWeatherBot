@@ -7,9 +7,8 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter
 
 class Bot constructor(keys :Secret) : ListenerAdapter(){
     private val weatherAPI = keys.weather
-    private val discordBotAPI = keys.discordBot
 
-    private val jsonWeather = WeatherJSON(weatherAPI,"34.0522", "118.2437")
+    private val jsonWeather = WeatherJSON(weatherAPI,"34.0522", "118.2437") //these are sample coordinates
     private val jsonWeatherDetails = jsonWeather.getDetails()
 
     private val weatherDay: WeatherReport = WeatherReport(
