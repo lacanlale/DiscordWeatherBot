@@ -4,28 +4,26 @@ import net.dv8tion.jda.core.entities.Message
 import net.dv8tion.jda.core.entities.MessageChannel
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent
 import net.dv8tion.jda.core.hooks.ListenerAdapter
+import java.io.File
 
 class Bot constructor(keys :Secret) : ListenerAdapter(){
-    private val weatherAPI = keys.weather
+    /** IF THE FILE NAME HAS BEEN MODIFIED, ENTER THE CHANGE HERE. INCLUDE EXTENSION**/
+    private val fileName = "CITY_LIST.txt"
+    private val cityFile = File("/DiscordWeatherBot/$fileName")
 
-    private val jsonWeather = WeatherJSON(weatherAPI,"34.0522", "118.2437") //these are sample coordinates
-    private val jsonWeatherDetails = jsonWeather.getDetails()
+    private val weatherReports: ArrayList<WeatherReport> = CityDetails(cityFile, keys.geocoding, keys.weather).getReports()
 
-    private val weatherDay: WeatherReport = WeatherReport(
-            jsonWeather.getSummary(),
-            jsonWeatherDetails.getDouble("precipProbability").toString(),
-            jsonWeatherDetails.getDouble("temperatureHigh").toString(),
-            jsonWeatherDetails.getDouble("temperatureLow").toString(),
-            jsonWeatherDetails.getDouble("humidity").toString(),
-            jsonWeatherDetails.getDouble("windSpeed").toString())
+    //todo implement sending messages of weather report
     override fun onMessageReceived(event: MessageReceivedEvent) {
         if (event.getAuthor().isBot()) return
         val message: Message = event.getMessage()
         val content: String = message.getContentDisplay()
-        if (content.equals("Execute"))
+        if (content.equals("Bot! Execute"))
         {
             val channel: MessageChannel = event.getChannel()
-            channel.sendMessage(weatherDay.toString()).queue()
+            for(report in weatherReports){
+                channel.sendMessage(report.toString()).queue()
+            }
         }
     }
 }
