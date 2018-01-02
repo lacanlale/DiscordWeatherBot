@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 import org.json.JSONObject
 import java.io.File

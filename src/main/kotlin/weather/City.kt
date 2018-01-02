@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 /**********************************************
  * City class for holding city name and state *

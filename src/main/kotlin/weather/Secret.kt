@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 /********************************************
  * File is usd to store API keys            *

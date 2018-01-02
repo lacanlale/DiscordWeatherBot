@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 /**************************************************************
  * Weather Class for holding data for a single weather report *
@@ -21,13 +21,13 @@ class WeatherReport constructor (city: City,
 
     override fun toString(): String {
         return """
-            |:･ﾟ☆✧$city✧☆ﾟ･:
+            |```~=*☆✧$city✧☆*=~
             |$summary
             |$precipitation
             |$tempHigh
             |$tempLow
             |$humidity
-            |$windSpeed
+            |$windSpeed```
             """.trimMargin()
     }
 }

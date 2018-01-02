@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 /************************************************************************************
  * Bot class. Responsible for sending the actual weather report to the discord chat *

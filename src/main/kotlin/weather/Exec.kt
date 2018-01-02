@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 /**********************************
  * Main class for running the bot *

@@ -1,4 +1,4 @@
-package discord.weather
+package weather
 
 /*****************************************************************************
  * Works with the JSON output from google's Geocoding API.                   *
