@@ -4,12 +4,14 @@ package discord.weather
  * Weather Class for holding data for a single weather report *
  **************************************************************/
 
-class WeatherReport constructor (sum: String,
-                          prec: String,
-                          high: String,
-                          low: String,
-                          hum: String,
-                          speed: String){
+class WeatherReport constructor (city: City,
+                                 sum: String,
+                                 prec: String,
+                                 high: String,
+                                 low: String,
+                                 hum: String,
+                                 speed: String){
+    private val city = city
     private val summary = sum
     private val precipitation = "Precipitation Chance: $prec%"
     private val tempHigh = "High: $high F°"
@@ -19,6 +21,7 @@ class WeatherReport constructor (sum: String,
 
     override fun toString(): String {
         return """
+            |:･ﾟ☆✧$city✧☆ﾟ･:
             |$summary
             |$precipitation
             |$tempHigh

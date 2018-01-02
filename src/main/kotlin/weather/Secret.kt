@@ -6,5 +6,6 @@ package discord.weather
  * not distribute your API key              *
  ********************************************/
 
-data class Secret(val weather: String = "",
-                  val discordBot: String = "")
+data class Secret constructor (val weather: String = "",
+                   val discordBot: String = "",
+                   val geocoding: String = "")

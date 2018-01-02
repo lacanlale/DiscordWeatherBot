@@ -21,7 +21,7 @@ class WeatherReport constructor (city: City,
 
     override fun toString(): String {
         return """
-            |$city
+            |:･ﾟ☆✧$city✧☆ﾟ･:
             |$summary
             |$precipitation
             |$tempHigh

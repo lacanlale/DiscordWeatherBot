@@ -1,5 +1,9 @@
 package discord.weather
 
+/************************************************************************************
+ * Bot class. Responsible for sending the actual weather report to the discord chat *
+ ************************************************************************************/
+
 import net.dv8tion.jda.core.entities.Message
 import net.dv8tion.jda.core.entities.MessageChannel
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent
@@ -9,7 +13,7 @@ import java.io.File
 class Bot constructor(keys :Secret) : ListenerAdapter(){
     /** IF THE FILE NAME HAS BEEN MODIFIED, ENTER THE CHANGE HERE. INCLUDE EXTENSION**/
     private val fileName = "CITY_LIST.txt"
-    private val cityFile = File("/DiscordWeatherBot/$fileName")
+    private val cityFile = File("$fileName")
 
     private val weatherReports: ArrayList<WeatherReport> = CityDetails(cityFile, keys.geocoding, keys.weather).getReports()
 
