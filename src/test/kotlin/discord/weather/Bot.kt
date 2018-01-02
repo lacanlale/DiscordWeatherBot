@@ -28,6 +28,7 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
             for(report in weatherReports){
                 channel.sendMessage(report.toString()).queue()
             }
+            channel.sendMessage("Powered by Dark Sky")
         }
     }
 }
