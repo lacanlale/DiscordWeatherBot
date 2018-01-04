@@ -21,13 +21,14 @@ class WeatherReport constructor (city: City,
 
     override fun toString(): String {
         return """
-            |```~=*☆✧$city✧☆*=~
-            |$summary
-            |$precipitation
-            |$tempHigh
-            |$tempLow
-            |$humidity
-            |$windSpeed```
+            |```markdown
+            |#~=*☆✧$city✧☆*=~#
+            |* $summary
+            |* $precipitation
+            |* $tempHigh
+            |* $tempLow
+            |* $humidity
+            |* $windSpeed```
             """.trimMargin()
     }
 }
