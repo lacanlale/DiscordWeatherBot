@@ -19,7 +19,7 @@ version '1.0-SNAPSHOT'
 apply plugin: 'java'
 apply plugin: 'kotlin'
 
-mainClassName = 'discord.weather.KotBot'
+mainClassName = 'weather.ExecKt'
 
 version '1.0'
 
@@ -47,10 +47,4 @@ compileKotlin {
 sourceSets {
     main.java.srcDirs += 'src/main/kotlin/'
     test.java.srcDirs += 'src/test/kotlin/'
-}
-jar {
-    manifest {
-        attributes 'Main-Class': 'com.jonathan.DiscordWeatherBot.src.main.kotlin.ExecKt'
-    }
-    from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }

@@ -13,11 +13,11 @@ class WeatherReport constructor (city: City,
                                  speed: String){
     private val city = city
     private val summary = sum
-    private val precipitation = "Precipitation Chance: $prec%"
-    private val tempHigh = "High: $high F°"
-    private val tempLow = "Low: $low F°"
-    private val humidity = "Humidity: $hum %"
-    private val windSpeed = "Wind Speed: $speed MPH"
+    private val precipitation = "PRECIPITATION CHANCE: $prec%"
+    private val tempHigh = "HIGH: $high F°"
+    private val tempLow = "LOW: $low F°"
+    private val humidity = "HUMIDITY: $hum %"
+    private val windSpeed = "WIND SPEED: $speed MPH"
 
     override fun toString(): String {
         return """
