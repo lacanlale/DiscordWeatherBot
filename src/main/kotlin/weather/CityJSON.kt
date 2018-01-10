@@ -25,7 +25,7 @@ class CityJSON constructor(city: String,
         connection.inputStream?.bufferedReader()?.readText()
     } finally { connection.disconnect() }
 
-    private val jsonCity: JSONObject = JSONObject(connectionData).getJSONArray("results").getJSONObject(0)
+    private val jsonCity= JSONObject(connectionData).getJSONArray("results").getJSONObject(0)
 
     /**Retrieves latitude,longitude JSON coordinates**/
     private val jsonCityCoordinates: JSONObject = jsonCity.getJSONObject("geometry").getJSONObject("location")

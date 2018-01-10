@@ -8,6 +8,7 @@ import net.dv8tion.jda.core.entities.Message
 import net.dv8tion.jda.core.entities.MessageChannel
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent
 import net.dv8tion.jda.core.hooks.ListenerAdapter
+
 import java.io.File
 
 class Bot constructor(keys :Secret) : ListenerAdapter(){
@@ -15,20 +16,22 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
     private val fileName = "CITY_LIST.txt"
     private val cityFile = File("$fileName")
 
-    private val weatherReports: ArrayList<WeatherReport> = CityDetails(cityFile, keys.geocoding, keys.weather).getReports()
+    private val weatherReports: ArrayList<WeatherReport> = CityDetails(cityFile, keys.googleGeocoding, keys.darksky).getReports()
 
-    //todo implement sending messages of weather report
     override fun onMessageReceived(event: MessageReceivedEvent) {
-        if (event.getAuthor().isBot()) return
-        val message: Message = event.getMessage()
-        val content: String = message.getContentDisplay()
-        if (content.equals("Bot! Execute"))
-        {
-            val channel: MessageChannel = event.getChannel()
+        if (event.author.isBot()) return
+        val message: Message = event.message
+        val content: String = message.contentDisplay
+        val channel: MessageChannel = event.channel
+        if (content == ("Bot: Weather")) {
             for(report in weatherReports){
                 channel.sendMessage(report.toString()).queue()
             }
-            channel.sendMessage("Powered by Dark Sky")
+            channel.sendMessage("`Powered by Dark Sky`").queue()
+        }
+        if(content == ("Bot: Goodbye")){
+            channel.sendMessage("Shutting down. Goodbye!").queue()
+            return
         }
     }
 }

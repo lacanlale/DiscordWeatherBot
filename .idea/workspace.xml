@@ -7,17 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a50aa699-b846-4f12-8bca-da59dbece35c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/classes/META-INF/WeatherBot_main.kotlin_module" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/weather/WeatherReport.class" afterPath="$PROJECT_DIR$/out/production/classes/weather/WeatherReport.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/WeatherBot_jar/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/WeatherBot_jar/WeatherBot.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/weather/Bot.class" afterPath="$PROJECT_DIR$/out/production/classes/weather/Bot.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/weather/CityJSON.class" afterPath="$PROJECT_DIR$/out/production/classes/weather/CityJSON.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/classes/weather/Secret.class" afterPath="$PROJECT_DIR$/out/production/classes/weather/Secret.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/WeatherBot_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/WeatherBot_jar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/WeatherBot.iml" afterPath="$PROJECT_DIR$/.idea/modules/WeatherBot.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CITY_LIST.txt" afterPath="$PROJECT_DIR$/CITY_LIST.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/weather/WeatherReport.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/weather/WeatherReport.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/weather/Bot.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/weather/Bot.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/weather/CityJSON.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/weather/CityJSON.kt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/kotlin/weather/Secret.kt" afterPath="$PROJECT_DIR$/src/main/kotlin/weather/Secret.kt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -49,56 +51,26 @@
       <file leaf-file-name="Bot.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Bot.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Exec.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="City.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/City.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CityDetails.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/CityDetails.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
+            <state relative-caret-position="476">
+              <caret line="32" column="66" lean-forward="false" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
               <folding>
-                <element signature="e#17#155#0" expanded="true" />
+                <element signature="e#277#508#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WeatherJSON.kt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/WeatherJSON.kt">
+      <file leaf-file-name="Exec.kt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="170">
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Secret.kt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Secret.kt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Secret.kt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -108,21 +80,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+            <state relative-caret-position="357">
+              <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="WeatherBot_jar.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/artifacts/WeatherBot_jar.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+              <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/kotlin/META-INF/MANIFEST.MF">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CITY_LIST.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CITY_LIST.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -412,8 +404,8 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4543751186000" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="868812450" />
+        <entry key="$PROJECT_DIR$" value="4544107015000" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="1850941851" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="615277776" />
       </map>
     </option>
@@ -631,20 +623,23 @@
         <option value="$PROJECT_DIR$/src/test/kotlin/discord/weather/WeatherReport.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/discord/weather/Secret.kt" />
         <option value="$PROJECT_DIR$/src/test/kotlin/discord/weather/Bot.kt" />
-        <option value="$PROJECT_DIR$/CITY_LIST.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/weather/City.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/weather/CityDetails.kt" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/weather/CityJSON.kt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/weather/WeatherJSON.kt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/kotlin/weather/WeatherReport.kt" />
         <option value="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/weather/CityJSON.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/weather/CityDetails.kt" />
+        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/out/production/resources/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/CITY_LIST.txt" />
         <option value="$PROJECT_DIR$/src/main/kotlin/weather/Bot.kt" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" />
-        <option value="$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt" />
-        <option value="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+        <option value="$PROJECT_DIR$/.idea/artifacts/WeatherBot_jar.xml" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/META-INF/MANIFEST.MF" />
         <option value="$PROJECT_DIR$/src/main/kotlin/weather/Secret.kt" />
+        <option value="$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt" />
       </list>
     </option>
   </component>
@@ -676,10 +671,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -690,20 +683,23 @@
             <path>
               <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
               <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="WeatherBot_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
@@ -750,14 +746,14 @@
               <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
               <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -766,13 +762,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DiscordWeatherBot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="weather" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -804,11 +793,28 @@
               <item name="kotlin" type="462c0819:PsiDirectoryNode" />
               <item name="discord" type="462c0819:PsiDirectoryNode" />
               <item name="weather" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.slf4j:slf4j-api:1.7.25" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="WeatherBot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Gradle: org.slf4j:slf4j-api:1.7.25" type="70bed36:NamedLibraryElementNode" />
+              <item name="slf4j-api-1.7.25.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -816,19 +822,25 @@
     <property name="nodejs_interpreter_path" value="/usr/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/artifacts/WeatherBot_jar/WeatherBot.jar" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/out/production/classes/weather" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.19770116" />
+    <property name="project.structure.side.proportion" value="0.117714286" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/test/kotlin/discord/weather" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/weather" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin" />
+      <recent name="$PROJECT_DIR$/out/production/classes" />
+      <recent name="$PROJECT_DIR$/out/artifacts/WeatherBot_jar" />
+      <recent name="$PROJECT_DIR$/out/artifacts" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
       <recent name="weather" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/weather" />
@@ -847,25 +859,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JAR Application.WeatherBot">
-    <configuration name="WeatherBot" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/WeatherBot_jar/WeatherBot.jar" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <envs />
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="WeatherBot:jar" />
-        </option>
-      </method>
-    </configuration>
-    <configuration name="WeatherBot_main.jar (1)" type="JarApplication" factoryName="JAR Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/WeatherBot_jar/WeatherBot_main.jar" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="JAR Application.fuck this">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -955,7 +949,23 @@
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
     </configuration>
-    <configuration name="build (2)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+    <configuration name="build (2)" type="GroovyScriptRunConfiguration" factoryName="Groovy">
+      <module name="WeatherBot" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+    </configuration>
+    <configuration name="build (3)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="WeatherBot" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+    </configuration>
+    <configuration name="build (4)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="WeatherBot" />
       <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
       <setting name="vmparams" value="" />
@@ -971,6 +981,22 @@
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
     </configuration>
+    <configuration name="build (6)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="WeatherBot" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+    </configuration>
+    <configuration name="build (7)" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
+      <module name="WeatherBot" />
+      <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workDir" value="file://$PROJECT_DIR$" />
+      <setting name="debug" value="false" />
+    </configuration>
     <configuration name="build" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="WeatherBot" />
       <setting name="path" value="file://$PROJECT_DIR$/build.gradle" />
@@ -979,12 +1005,19 @@
       <setting name="workDir" value="file://$PROJECT_DIR$" />
       <setting name="debug" value="false" />
     </configuration>
-    <configuration name="gradle-wrapper.jar" type="JarApplication" factoryName="JAR Application" temporary="true">
+    <configuration name="fuck this" type="JarApplication" factoryName="JAR Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="JAR_PATH" value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/WeatherBot_jar/WeatherBot.jar" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <envs />
+      <method>
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="WeatherBot:jar" />
+        </option>
+      </method>
     </configuration>
-    <configuration name="weather.ExecKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
+    <configuration name="weather.ExecKt" type="JetRunConfigurationType" factoryName="Kotlin" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="weather.ExecKt" />
       <option name="VM_PARAMETERS" />
@@ -996,23 +1029,25 @@
       <module name="WeatherBot_main" />
       <envs />
     </configuration>
-    <list size="8">
+    <list size="10">
       <item index="0" class="java.lang.String" itemvalue="Groovy.build" />
       <item index="1" class="java.lang.String" itemvalue="Groovy.build (5)" />
-      <item index="2" class="java.lang.String" itemvalue="JAR Application.WeatherBot" />
-      <item index="3" class="java.lang.String" itemvalue="Groovy.build (2)" />
-      <item index="4" class="java.lang.String" itemvalue="Groovy.build (1)" />
-      <item index="5" class="java.lang.String" itemvalue="JAR Application.WeatherBot_main.jar (1)" />
-      <item index="6" class="java.lang.String" itemvalue="JAR Application.gradle-wrapper.jar" />
-      <item index="7" class="java.lang.String" itemvalue="Kotlin.weather.ExecKt" />
+      <item index="2" class="java.lang.String" itemvalue="Groovy.build (2)" />
+      <item index="3" class="java.lang.String" itemvalue="JAR Application.fuck this" />
+      <item index="4" class="java.lang.String" itemvalue="Kotlin.weather.ExecKt" />
+      <item index="5" class="java.lang.String" itemvalue="Groovy.build (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Groovy.build (3)" />
+      <item index="7" class="java.lang.String" itemvalue="Groovy.build (4)" />
+      <item index="8" class="java.lang.String" itemvalue="Groovy.build (7)" />
+      <item index="9" class="java.lang.String" itemvalue="Groovy.build (6)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Groovy.build (1)" />
-        <item index="1" class="java.lang.String" itemvalue="JAR Application.gradle-wrapper.jar" />
-        <item index="2" class="java.lang.String" itemvalue="Groovy.build (2)" />
-        <item index="3" class="java.lang.String" itemvalue="JAR Application.WeatherBot_main.jar (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Kotlin.weather.ExecKt" />
+        <item index="0" class="java.lang.String" itemvalue="Groovy.build (6)" />
+        <item index="1" class="java.lang.String" itemvalue="Groovy.build (7)" />
+        <item index="2" class="java.lang.String" itemvalue="Groovy.build (4)" />
+        <item index="3" class="java.lang.String" itemvalue="Groovy.build (3)" />
+        <item index="4" class="java.lang.String" itemvalue="Groovy.build (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1031,15 +1066,17 @@
       <updated>1514272147508</updated>
       <workItem from="1514272152541" duration="21000" />
       <workItem from="1514272250920" duration="29980000" />
-      <workItem from="1514842461412" duration="23514000" />
+      <workItem from="1514842461412" duration="23633000" />
+      <workItem from="1515215170845" duration="10250000" />
+      <workItem from="1515477837299" duration="17483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53515000" />
+    <option name="totallyTimeSpent" value="81367000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="20" width="1920" height="1060" extended-state="6" />
+    <frame x="1" y="41" width="1918" height="1038" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1050,9 +1087,8 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33021808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1064,13 +1100,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997923" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997923" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295099" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1084,11 +1121,27 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Secret.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kotlin/discord/weather/Exec.kt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1104,7 +1157,7 @@
         <state relative-caret-position="68">
           <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
           <folding>
-            <element signature="e#285#515#0" expanded="true" />
+            <element signature="e#285#515#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1114,7 +1167,7 @@
         <state relative-caret-position="221">
           <caret line="15" column="34" lean-forward="true" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
-            <element signature="e#501#581#0" expanded="true" />
+            <element signature="e#501#581#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1150,7 +1203,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="51">
             <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -1169,7 +1221,7 @@
         <state relative-caret-position="323">
           <caret line="24" column="39" lean-forward="true" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
           <folding>
-            <element signature="e#25#163#0" expanded="true" />
+            <element signature="e#25#163#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1189,18 +1241,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20160810/92f4b89bc0bb4c7c3f7b52724568a901b7e0195b/json-20160810-sources.jar!/org/json/JSONArray.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="363" column="0" lean-forward="false" selection-start-line="363" selection-start-column="0" selection-end-line="363" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20160810/92f4b89bc0bb4c7c3f7b52724568a901b7e0195b/json-20160810-sources.jar!/org/json/JSONObject.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="617" column="0" lean-forward="false" selection-start-line="617" selection-start-column="0" selection-end-line="617" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1219,7 +1263,7 @@
         <state relative-caret-position="357">
           <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding>
-            <element signature="e#501#581#0" expanded="true" />
+            <element signature="e#501#581#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1255,7 +1299,7 @@
         <state relative-caret-position="442">
           <caret line="30" column="54" lean-forward="false" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
           <folding>
-            <element signature="e#285#515#0" expanded="true" />
+            <element signature="e#285#515#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1265,7 +1309,7 @@
         <state relative-caret-position="884">
           <caret line="52" column="50" lean-forward="false" selection-start-line="52" selection-start-column="50" selection-end-line="52" selection-end-column="50" />
           <folding>
-            <element signature="e#25#163#0" expanded="true" />
+            <element signature="e#25#163#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1288,29 +1332,93 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CITY_LIST.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="15" lean-forward="false" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="51">
             <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/CityJSON.kt">
+    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.json/json/20160810/92f4b89bc0bb4c7c3f7b52724568a901b7e0195b/json-20160810-sources.jar!/org/json/JSONArray.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="200" column="0" lean-forward="false" selection-start-line="200" selection-start-column="0" selection-end-line="200" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/WeatherReport.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/City.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/CityDetails.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding>
+            <element signature="e#17#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/kotlin-build/version.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/CityJSON.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="9" lean-forward="true" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/production/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1323,100 +1431,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/WeatherReport.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/production/resources/META-INF/MANIFEST.MF">
+    <entry file="file://$PROJECT_DIR$/out/test/classes/discord/weather/ExecKt.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="8" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/WeatherJSON.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/ExecKt.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="51">
+          <caret line="3" column="15" lean-forward="true" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/out/artifacts/PLEASE/weather/ExecKt.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CITY_LIST.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/artifacts/WeatherBot_jar.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+        <state relative-caret-position="68">
+          <caret line="4" column="46" lean-forward="false" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt">
+    <entry file="file://$PROJECT_DIR$/out/production/classes/weather/ExecKt.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/City.kt">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.dv8tion/JDA/3.4.0_317/305de120d8c4f1dee501ae5157503e5b92898018/JDA-3.4.0_317-sources.jar!/net/dv8tion/jda/core/JDABuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="8" selection-end-line="0" selection-end-column="8" />
+        <state relative-caret-position="184">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Bot.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/WeatherJSON.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="54" />
+        <state relative-caret-position="306">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/CityDetails.kt">
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/META-INF/MANIFEST.MF">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="15" column="50" lean-forward="true" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding>
-            <element signature="e#17#155#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="25" column="28" lean-forward="true" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+        <state relative-caret-position="357">
+          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -1429,24 +1519,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Bot.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="32" column="66" lean-forward="false" selection-start-line="32" selection-start-column="66" selection-end-line="32" selection-end-column="66" />
+          <folding>
+            <element signature="e#277#508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/kotlin/weather/Exec.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor>
+            <show-sorted>false</show-sorted>
             <show-content>
-              <type id="library" />
-              <type id="jpa-descriptors" />
               <type id="artifact" />
+              <type id="jpa-descriptors" />
               <type id="javaee-facet-resources" />
+              <type id="library" />
             </show-content>
           </artifact-editor>
           <last-edited>WeatherBot:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.19770116" />
+                <option value="0.117714286" />
                 <option value="0.5" />
               </list>
             </option>
@@ -1490,12 +1599,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>WeatherBot</last-edited>
+          <last-edited>Kotlin|WeatherBot_main|WeatherBot</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.19770116" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
