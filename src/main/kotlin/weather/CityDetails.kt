@@ -37,7 +37,7 @@ class CityDetails constructor(file: File,
         return locations
     }
     fun getReports(): ArrayList<WeatherReport>{
-        var reports: ArrayList<WeatherReport> = ArrayList()
+        val reports: ArrayList<WeatherReport> = ArrayList()
 
         var cityJson: CityJSON
         var lat: String

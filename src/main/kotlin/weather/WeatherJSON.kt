@@ -12,11 +12,10 @@ import java.net.URL
 class WeatherJSON constructor(weatherKey:String,
                               latitude:String,
                               longitude:String) {
-    private var darkskyFullURL = StringBuilder("https://api.darksky.net/forecast/")
-            .append(weatherKey)
-            .append("/$latitude,$longitude")
+    //Simple string necessary for utilizing the correct API URL
+    private val darkskyFullURL = "https://api.darksky.net/forecast/$weatherKey/$latitude,$longitude"
 
-    private var connection = URL(darkskyFullURL.toString()).openConnection() as HttpURLConnection
+    private val connection = URL(darkskyFullURL).openConnection() as HttpURLConnection
     private val connectionData = try {
             connection.inputStream?.bufferedReader()?.readText()
         } finally { connection.disconnect() }

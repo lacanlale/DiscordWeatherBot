@@ -12,6 +12,10 @@ import java.net.URL
 class WeatherJSON constructor(weatherKey:String,
                               latitude:String,
                               longitude:String) {
+    /*
+     * Simple string builder for the darksky URL
+     * Necessary for acquiring JSON data
+     */
     private var darkskyFullURL = StringBuilder("https://api.darksky.net/forecast/")
             .append(weatherKey)
             .append("/$latitude,$longitude")
@@ -22,6 +26,9 @@ class WeatherJSON constructor(weatherKey:String,
         } finally { connection.disconnect() }
     private val jsonDaily: JSONObject = JSONObject(connectionData).getJSONObject("daily")
 
+    /**
+     * JSON DATA RETRIEVAL METHODS
+     */
     fun getSummary() : String{
         return jsonDaily.getString("summary")
     }

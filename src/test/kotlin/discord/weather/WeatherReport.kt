@@ -19,6 +19,20 @@ class WeatherReport constructor (city: City,
     private val humidity = "Humidity: $hum %"
     private val windSpeed = "Wind Speed: $speed MPH"
 
+
+    /*
+     * toString for readable output
+     * Method is called by JDA library to print the message to server chat
+     *
+     * OUTPUT SAMPLE:
+     * :･ﾟ☆✧San Francisco✧☆ﾟ･:
+     * Light Breeze, partly cloudy with a chance of rain
+     * Precipitation Chance: 0.6%
+     * High: 66 F°
+     * Low: 53 F°
+     * Humidity: 15%
+     * Wind Speed: 3 MPH
+     */
     override fun toString(): String {
         return """
             |:･ﾟ☆✧$city✧☆ﾟ･:

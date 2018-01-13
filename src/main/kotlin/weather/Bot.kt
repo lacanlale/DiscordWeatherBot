@@ -29,9 +29,16 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
             }
             channel.sendMessage("`Powered by Dark Sky`").queue()
         }
-        if(content == ("Bot: Goodbye")){
+        else if(content == ("Bot: Goodbye")){
             channel.sendMessage("Shutting down. Goodbye!").queue()
             return
+        }
+        else if(content == ("Bot: Commands") || content == ("Bot: Help")){
+            channel.sendMessage("""
+                |Possible commands are:
+                |\"Weather\" for a weather report of each city on the CITY_LIST.txt
+                |\"Goodbye\" to end my connection
+                """.trimMargin()).queue()
         }
     }
 }
