@@ -15,8 +15,8 @@ class WeatherJSON constructor(weatherKey:String,
     //Simple string necessary for utilizing the correct API URL
     private val darkskyFullURL = "https://api.darksky.net/forecast/$weatherKey/$latitude,$longitude"
 
-    private val connection = URL(darkskyFullURL).openConnection() as HttpURLConnection
-    private val connectionData = try {
+    private val connection:HttpURLConnection = URL(darkskyFullURL).openConnection() as HttpURLConnection
+    private val connectionData: String? = try {
             connection.inputStream?.bufferedReader()?.readText()
         } finally { connection.disconnect() }
     private val jsonDaily: JSONObject = JSONObject(connectionData).getJSONObject("daily")

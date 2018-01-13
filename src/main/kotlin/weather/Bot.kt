@@ -16,6 +16,12 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
     private val fileName = "CITY_LIST.txt"
     private val cityFile = File("$fileName")
 
+    /********************************************************
+     * THIS IS THE BOT NAME THAT YOU HAVE IN YOUR SERVER.   *
+     * YOU MUST SET THE ACTUAL BOT NAME OR IT WILL NOT WORK *
+     ********************************************************/
+    private val botName = "Ribbot"
+
     private val weatherReports: ArrayList<WeatherReport> = CityDetails(cityFile, keys.googleGeocoding, keys.darksky).getReports()
 
     override fun onMessageReceived(event: MessageReceivedEvent) {
@@ -23,17 +29,21 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
         val message: Message = event.message
         val content: String = message.contentDisplay
         val channel: MessageChannel = event.channel
-        if (content == ("Bot: Weather")) {
-            for(report in weatherReports){
-                channel.sendMessage(report.toString()).queue()
+
+        if (content == ("@$botName: Weather")) {
+            var report = StringBuilder("```markdown")
+                    .append("\n")
+            for(weather in weatherReports){
+                report.append("$weather\n")
             }
-            channel.sendMessage("`Powered by Dark Sky`").queue()
+            channel.sendMessage(report.append("Powered by Dark Sky\n```").toString()).queue()
         }
-        else if(content == ("Bot: Goodbye")){
+
+        else if(content == ("@$botName: Goodbye")){
             channel.sendMessage("Shutting down. Goodbye!").queue()
             return
         }
-        else if(content == ("Bot: Commands") || content == ("Bot: Help")){
+        else if(content == ("@$botName: Commands") || content == ("@$botName: Help")){
             channel.sendMessage("""
                 |Possible commands are:
                 |\"Weather\" for a weather report of each city on the CITY_LIST.txt
