@@ -34,7 +34,7 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
             var report = StringBuilder("```markdown")
                     .append("\n")
             for(weather in weatherReports){
-                report.append("$weather\n")
+                report.append("$weather\n\n")
             }
             channel.sendMessage(report.append("Powered by Dark Sky\n```").toString()).queue()
         }
