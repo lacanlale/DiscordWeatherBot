@@ -29,26 +29,34 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
         val message: Message = event.message
         val content: String = message.contentDisplay
         val channel: MessageChannel = event.channel
-
-        if (content == ("@$botName: Weather")) {
-            var report = StringBuilder("```markdown")
-                    .append("\n")
-            for(weather in weatherReports){
-                report.append("$weather\n\n")
+        
+        when (content){
+            "@$botName: Weather" -> {
+                var report = StringBuilder("```markdown")
+                        .append("\n")
+                for(weather in weatherReports){
+                    report.append("$weather\n\n")
+                }
+                channel.sendMessage(report.append("Powered by Dark Sky\n```").toString()).queue()
             }
-            channel.sendMessage(report.append("Powered by Dark Sky\n```").toString()).queue()
-        }
-
-        else if(content == ("@$botName: Goodbye")){
-            channel.sendMessage("Shutting down. Goodbye!").queue()
-            return
-        }
-        else if(content == ("@$botName: Commands") || content == ("@$botName: Help")){
-            channel.sendMessage("""
+            "@$botName: Goodbye" -> {
+                channel.sendMessage("Shutting down. Goodbye!").queue()
+                return
+            }
+            "@$botName: Commands" -> {
+                channel.sendMessage("""
                 |Possible commands are:
                 |\"Weather\" for a weather report of each city on the CITY_LIST.txt
                 |\"Goodbye\" to end my connection
                 """.trimMargin()).queue()
+            }
+            "@$botName: Help" -> {
+                channel.sendMessage("""
+                |Possible commands are:
+                |\"Weather\" for a weather report of each city on the CITY_LIST.txt
+                |\"Goodbye\" to end my connection
+                """.trimMargin()).queue()
+            }
         }
     }
 }

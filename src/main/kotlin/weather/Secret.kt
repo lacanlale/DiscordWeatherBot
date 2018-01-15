@@ -6,6 +6,6 @@ package weather
  * not distribute your API key              *
  ********************************************/
 
-data class Secret constructor (val darksky: String = "",
+data class Secret (val darksky: String = "",
                    val discordBot: String = "",
                    val googleGeocoding: String = "")
