@@ -9,6 +9,7 @@ import net.dv8tion.jda.core.JDABuilder
 
 fun main(args: Array<String>){
     val keys = Secret()
+    //TODO HITTING ERRORS WITH SLF4J CONNECTIONS. FIX
     JDABuilder(AccountType.BOT)
             .setToken(keys.discordBot)
             .buildAsync()
