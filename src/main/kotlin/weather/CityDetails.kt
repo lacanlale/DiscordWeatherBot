@@ -20,15 +20,13 @@ class CityDetails constructor(file: File,
     private val cityList = readFile(file)
 
     private fun readFile(file: File) : ArrayList<City>{
-        var locations: ArrayList<City> = ArrayList()
+        val locations: ArrayList<City> = ArrayList()
         try{
             val scanner = Scanner(file)
             var cityState: List<String>
-            var newLocation: City
             while(scanner.hasNext()){
                 cityState = scanner.nextLine().trim().replace(" +", " ").split(",")
-                newLocation = City(cityState[0], cityState[1])
-                locations.add(newLocation)
+                locations.add(City(cityState[0], cityState[1]))
             }
         }
         catch (e: FileNotFoundException){

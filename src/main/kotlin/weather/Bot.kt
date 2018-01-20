@@ -20,7 +20,7 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
      * THIS IS THE BOT NAME THAT YOU HAVE IN YOUR SERVER.   *
      * YOU MUST SET THE ACTUAL BOT NAME OR IT WILL NOT WORK *
      ********************************************************/
-    private val botName = ""
+    private val botName = "Ribbot"
 
     private val weatherReports: ArrayList<WeatherReport> = CityDetails(cityFile, keys.googleGeocoding, keys.darksky).getReports()
 
@@ -32,7 +32,7 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
 
         when (content){
             "@$botName: Weather" -> {
-                var report = StringBuilder("```markdown")
+                val report = StringBuilder("```markdown")
                         .append("\n")
                 for(weather in weatherReports){
                     report.append("$weather\n\n")
@@ -41,10 +41,9 @@ class Bot constructor(keys :Secret) : ListenerAdapter(){
             }
             "@$botName: Goodbye" -> {
                 channel.sendMessage("Shutting down. Goodbye!").queue()
-                return
+                System.exit(0)
             }
             "@$botName: Commands" -> {
-                //TODO DOES NOT ACTUALLY EXIT. FIX
                 channel.sendMessage("""
                 |Possible commands are:
                 |\"Weather\" for a weather report of each city on the CITY_LIST.txt
