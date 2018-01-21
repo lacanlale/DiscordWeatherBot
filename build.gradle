@@ -5,6 +5,7 @@ buildscript {
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "org.slf4j:slf4j-nop:1.8.0-beta0"
     }
 }
 plugins {
@@ -37,9 +38,9 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    testCompile group: 'org.slf4j', name: 'slf4j-nop', version: '1.8.0-beta0'
     compile "net.dv8tion:JDA:$jdaVersion"
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    compile "org.slf4j:slf4j-simple:1.7.9"
 }
 
 compileJava.options.encoding = 'UTF-8'

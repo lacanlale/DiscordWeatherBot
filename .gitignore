@@ -1,4 +1,3 @@
-/DiscordWeatherBot/src/main/kotlin/weather/Secret.kt
-/DiscordWeatherBot/src/test/kotlin/discord.weather/Secret.kt
+src/main/kotlin/weather/Secret.kt
 Secret.kt
 CITY_LIST.txt
