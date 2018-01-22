@@ -69,5 +69,9 @@ The installation process is nearly complete, however the final details remaining
 3. Finally, navigate to the **CITY_LIST.txt** file by following this path
 > /home/USER/DiscordWeatherBot/CITY_LIST.txt
 4. Modify this list with the desired cities. Be sure to follow the sample format, as it is crucial for the program when reading the cities.
+
+### Running Bot
+WIP
+
 #### License
  + Project is under the MIT License
