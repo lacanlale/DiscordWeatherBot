@@ -18,7 +18,7 @@ This bot does run constantly, meaning when you run the jar, the bot will stay co
  + Lowest temperature for that day (in Fahrenheit)
  + Humidity percentage
  + Wind speed (in MPH)
-
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/discord%20ss.png)
 ##### Utilizes:
 - JDA (Java Discord API) for Discord interaction
 - darksky.net API for weather forecasts
@@ -38,6 +38,7 @@ This bot does run constantly, meaning when you run the jar, the bot will stay co
 2. Name the bot however you want. Keep note of the bots name, as it will be necessary for proper installation
 3. Click **Create App**
 4. After creation, locate the **Create Bot User**. This option is under the app description.
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/Create%20a%20Bot%20User.png)
 ### Add the new bot to your server
 1. Locate the *App details* box at the top of the page
 2. Find the field named *Client ID:*
@@ -52,15 +53,17 @@ This bot does run constantly, meaning when you run the jar, the bot will stay co
 1. From the same Application page where the **Client ID** was found, navigate to where you clicked **Create Bot User** which is under the Application description
 2. You should notice that there is a *Bot* box present with a **Token** attribute
 3. Click on the *Click to reveal* property and take note of the given token. You can save this to a file or write it down, as you will be moving it along with your other 2 API keys soon.
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/discord%20api.png)
 4. Now open your darksky account at https://darksky.net/dev/account and take note of that API key located within the *Your Secret Key* box
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/darksky.png)
 5. After taking note, redirect yourself to your Google geocoding account at https://developers.google.com/maps/documentation/geocoding/start and select the *Get a key* option
 >Note: Google requires that you create a project for a key. Simply create a project, name it as you like, and take note of the key given.
-
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/geocoding.png)
 After all three keys have been recorded, navigate to the Secret.kt file following this path:
 >/home/USER/DiscordWeatherBot/src/main/kotlin/weather/Secret.kt
 
 and copy and paste each key into their appropriate field.
-
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/Secret.png)
 ### Finishing details
 The installation process is nearly complete, however the final details remaining are the bots name and the cities.
 1. Navigate to the Bot.kt file following this path:
@@ -69,7 +72,7 @@ The installation process is nearly complete, however the final details remaining
 3. Finally, navigate to the **CITY_LIST.txt** file by following this path
 > /home/USER/DiscordWeatherBot/CITY_LIST.txt
 4. Modify this list with the desired cities. Be sure to follow the sample format, as it is crucial for the program when reading the cities.
-
+![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/City%20List.png)
 ### Running Bot
 WIP
 
