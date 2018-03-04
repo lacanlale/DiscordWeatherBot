@@ -74,7 +74,10 @@ The installation process is nearly complete, however the final details remaining
 4. Modify this list with the desired cities. Be sure to follow the sample format, as it is crucial for the program when reading the cities.
 ![alt text](https://raw.githubusercontent.com/lacanlale/DiscordWeatherBot/master/README%20IMAGES/City%20List.png)
 ### Running Bot
-WIP
+The executable .jar file is located within the /home/USER/DiscordWeatherBot/out/artifacts/WeatherBot_jar
+
+One way of utilizing the bot is saving a handy shortcut to execute the bot.
+Once the bot has been executed, the connection can be terminated by simply calling the @BOT_NAME: Goodbye
 
 #### License
  + Project is under the MIT License
