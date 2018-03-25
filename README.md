@@ -1,4 +1,4 @@
-# Discord Weather Bot☀️☁️🤖
+# Discord Weather Bot☀️☁️🤖[UNDER MAINTENANCE]
 
 *This is a discord bot for displaying the weather report daily.*
 
